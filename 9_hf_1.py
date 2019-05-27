@@ -76,7 +76,7 @@ def str2float(s):
         return x * 10 + y
     def char2num(s):
         return DIGITS[s]    
-    return reduce(fn, map(char2num, s.split('.')[0]))+reduce(fn, map(char2num, s.split('.')[1]))/(10**len(s.split('.')[1]))
+    return reduce(fn, map(char2num, s.split('.')[0]))+reduce(fn, map(char2num, s.split('.')[1]))/(pow(10,len(s.split('.')[1])))
 
 print('str2float(\'123.456\') =', str2float('123.456'))
 if abs(str2float('123.456') - 123.456) < 0.00001:
