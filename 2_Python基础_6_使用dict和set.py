@@ -106,7 +106,7 @@ a = ['c', 'b', 'a']
 a.sort()
 print(a)
 
-而对于不可变对象，比如str，对str进行操作：
+# 而对于不可变对象，比如str，对str进行操作：
 a = 'abc'  # a本身是一个变量，它指向的对象的内容才是'abc'
 a.replace('a', 'A')  # 调用方法replace是作用在字符串对象'abc'上的，创建了一个新字符串'Abc'并返回
 print(a)  # 变量a仍指向原有的字符串'abc'
